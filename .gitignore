@@ -10,8 +10,11 @@
 
 # production
 /build
+/yarn.lock
 
 # misc
+debug.log
+.prettierrc
 .DS_Store
 .env.local
 .env.development.local
