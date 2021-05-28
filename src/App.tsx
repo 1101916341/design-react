@@ -1,27 +1,22 @@
-import React from "react";
+import React from 'react'
+import Button, { ButtonSize, ButtonType } from './components/Button/button'
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-        <h2>Hello World</h2>
-        <h3>Hello World</h3>
-        <code>const c = '1'</code>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Button>Hello</Button>
+      <Button disabled>Hello</Button>
+      <Button disabled btnType={ButtonType.Primary} size={ButtonSize.Smail}>
+        Hello
+      </Button>
+      <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>
+        Hello
+      </Button>
+      <Button btnType={ButtonType.Link} disabled href='https://www.baidu.com'>
+        链接
+      </Button>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
